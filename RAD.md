@@ -1,6 +1,36 @@
 # HackeNewsCloneDoc 
 
 Requirements Analysis Document
+
+Table of content:
+1. Introduction
+1. Purpose of the system
+2. Scope of the system
+3. Objectives and success criteria of the project 
+4. Definitions, acronyms, and abbreviations 
+5. References
+6. Overview
+2. Current system
+3. Proposed system
+1. Overview
+2. Functional requirements
+3. Nonfunctional requirements
+1. Usability
+2. Reliability 
+3. Performance 
+4. Supportability 
+5. Implementation 
+6. Interface
+7. Packaging
+8. Legal
+4. System models
+1. Scenarios
+2. Use case model
+4. Glossary
+
+
+
+
 1. Introduction
        1. Purpose of the system
        Social news website where people can share news, connected to computer science and entrepreneurship
@@ -178,15 +208,17 @@ Flow of events:
 
 Use case name: View news
 Participating actors: Guest
+Brief description: Guest views news on website.
 Flow of events:
        Guest: visits HNC website
-       HNC: returns front page, that contains a list of hacker news.
+       HNC: returns front page, that contains a list of posts.
 Entry conditions:
 Exit conditions: Guest views hacker news.
 Quality requirements:
 
 Use case name: Sign up
 Participating actors: Guest
+Brief description: Guest creates new user profile. 
 Flow of events:
        Guest: clicks on “Sign up” button from the navigation bar.
 HNC: returns “Sign up” page.
@@ -198,6 +230,7 @@ Quality requirements:
 
 Use case name: Share news
 Participating actors: User
+Brief description: User creates new post.
 Flow of events:
 User: clicks “New post” button from navigation bar on top.
 HNC: returns “new post” page.
@@ -209,6 +242,7 @@ Quality requirements:
 
 Use case name: Vote on an article
 Participating actors: User
+Brief description: User votes for an article.
 Flow of events:
 User: clicks either “up” or “down” buttons to vote up or down for an article. 
 Entry conditions User is logged in. User is viewing “Post” page.
@@ -217,6 +251,7 @@ Quality requirements:
 
 Use case name: Comment on an article
 Participating actors: User
+Brief description: User comments on an article.
 Flow of events:
 User: enters comment in text input field called “Comment” and clicks “Comment” button.
 HNC:  updates “Post” page with user’s comment and saves the comment to the HNC database.
@@ -226,6 +261,7 @@ Quality requirements:
 
 Use case name: Sign in
 Participating actors: User
+Brief description: User logs into the website.
 Flow of events:
        User: clicks on “Sign in” button on top.
        HNC: returns “Sign in” page.
@@ -237,6 +273,7 @@ Quality requirements:
 
 Use case name: View system status
 Participating actors: Simulator
+Brief description: Simulator gets system status.
 Flow of events: 
 Simulator: visits website’s URL + “/status”.
 HNC: returns the website’s status: Alive, Update, or Down.
@@ -246,6 +283,7 @@ Quality requirements:
 
 Use case name: Post article
 Participating actors: Simulator
+Brief description: Simulator posts an article.
 Flow of events:
 Simulator: sends a news article in JSON format to website’s URL + “/post”.
 HNC: Saves post in database. 
@@ -256,6 +294,7 @@ Quality requirements:
 
 Use case name: View latest article
 Participating actors: Simulator
+Brief description: Simulator gets latest article
 Flow of events:
 Simulator: visits website’s URL + “/latest”.
 HNC: returns latest article from database. 
@@ -265,5 +304,4 @@ Quality requirements:
 
 
        4. Glossary
-
 
