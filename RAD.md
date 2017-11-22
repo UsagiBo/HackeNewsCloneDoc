@@ -50,7 +50,7 @@ Table of content:
 - back-end of a system - process information in response to front-end system requests and operations
 - karma – points equal to the sum of upvotes-downvotes on a user’s own content-
 
-5. References
+	5. References
 [1] Hacker News website: https://news.ycombinator.com/
 [2] Graham, Paul. "Hacker News Guidelines". Retrieved 2009-04-29.
 
@@ -220,10 +220,10 @@ Use case name: Sign up
 Participating actors: Guest
 Brief description: Guest creates new user profile. 
 Flow of events:
-       Guest: clicks on “Sign up” button from the navigation bar.
-HNC: returns “Sign up” page.
-Guest: enters username and password and clicks “Sign up” button.
-HNC: Registers a new user profile for Guest in the database and returns home page.
+	Guest: clicks on “Sign up” button from the navigation bar.
+	HNC: returns “Sign up” page.
+	Guest: enters username and password and clicks “Sign up” button.
+	HNC: Registers a new user profile for Guest in the database and returns home page.
 Entry conditions: Guest is on HNC front page 
 Exit conditions: Guest has been registered on the system.
 Quality requirements:
@@ -232,10 +232,10 @@ Use case name: Share news
 Participating actors: User
 Brief description: User creates new post.
 Flow of events:
-User: clicks “New post” button from navigation bar on top.
-HNC: returns “new post” page.
-User: enters the post’s title and text and clicks “Post” button. 
-HNC: returns “Post” page, containing the post. The post is saved in HNC database.
+	User: clicks “New post” button from navigation bar on top.
+	HNC: returns “new post” page.
+	User: enters the post’s title and text and clicks “Post” button. 
+	HNC: returns “Post” page, containing the post. The post is saved in HNC database.
 Entry conditions User is logged in. User is on HNC front page.
 Exit conditions: HNC has saved user’s post to the database
 Quality requirements:
@@ -244,7 +244,7 @@ Use case name: Vote on an article
 Participating actors: User
 Brief description: User votes for an article.
 Flow of events:
-User: clicks either “up” or “down” buttons to vote up or down for an article. 
+	User: clicks either “up” or “down” buttons to vote up or down for an article. 
 Entry conditions User is logged in. User is viewing “Post” page.
 Exit conditions: The up or down votes for that post change.
 Quality requirements:
@@ -253,8 +253,8 @@ Use case name: Comment on an article
 Participating actors: User
 Brief description: User comments on an article.
 Flow of events:
-User: enters comment in text input field called “Comment” and clicks “Comment” button.
-HNC:  updates “Post” page with user’s comment and saves the comment to the HNC database.
+	User: enters comment in text input field called “Comment” and clicks “Comment” button.
+	HNC:  updates “Post” page with user’s comment and saves the comment to the HNC database.
 Entry conditions User is logged in. User is viewing “Post” page.
 Exit conditions: User’s comment is present in HNC database.
 Quality requirements:
@@ -275,8 +275,8 @@ Use case name: View system status
 Participating actors: Simulator
 Brief description: Simulator gets system status.
 Flow of events: 
-Simulator: visits website’s URL + “/status”.
-HNC: returns the website’s status: Alive, Update, or Down.
+	Simulator: visits website’s URL + “/status”.
+	HNC: returns the website’s status: Alive, Update, or Down.
 Entry conditions: 
 Exit conditions: Simulator is aware of the HNC current state.
 Quality requirements:
@@ -285,8 +285,8 @@ Use case name: Post article
 Participating actors: Simulator
 Brief description: Simulator posts an article.
 Flow of events:
-Simulator: sends a news article in JSON format to website’s URL + “/post”.
-HNC: Saves post in database. 
+	Simulator: sends a news article in JSON format to website’s URL + “/post”.
+	HNC: Saves post in database. 
 The website saves the article.
 Entry conditions: Simulator knows JSON format of post class.
 Exit conditions: System has saved the post in HNC database
@@ -296,8 +296,8 @@ Use case name: View latest article
 Participating actors: Simulator
 Brief description: Simulator gets latest article
 Flow of events:
-Simulator: visits website’s URL + “/latest”.
-HNC: returns latest article from database. 
+	Simulator: visits website’s URL + “/latest”.
+	HNC: returns latest article from database. 
 Entry conditions: 
 Exit conditions: Simulator receives the latest article from database
 Quality requirements:
