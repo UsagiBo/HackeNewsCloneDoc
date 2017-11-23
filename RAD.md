@@ -4,29 +4,29 @@ Requirements Analysis Document
 
 Table of content:
 1. Introduction
-1. Purpose of the system
-2. Scope of the system
-3. Objectives and success criteria of the project 
-4. Definitions, acronyms, and abbreviations 
-5. References
-6. Overview
+	1. Purpose of the system
+	2. Scope of the system
+	3. Objectives and success criteria of the project 
+	4. Definitions, acronyms, and abbreviations 
+	5. References
+	6. Overview
 2. Current system
 3. Proposed system
-1. Overview
-2. Functional requirements
-3. Nonfunctional requirements
-1. Usability
-2. Reliability 
-3. Performance 
-4. Supportability 
-5. Implementation 
-6. Interface
-7. Packaging
-8. Legal
+	1. Overview
+	2. Functional requirements
+	3. Nonfunctional requirements
+       1. Usability
+       2. Reliability 
+       3. Performance 
+       4. Supportability 
+       5. Implementation 
+       6. Interface
+       7. Packaging
+       8. Legal
 4. System models
 1. Scenarios
-2. Use case model
-4. Glossary
+       2. Use case model
+5. Glossary
 
 
 
@@ -46,8 +46,7 @@ Table of content:
 - The words system and website refer to Hacker News Clone. 
 - News, news article content and post refer to website’s content 
 - API - Application programming interface
-- front-end of a system – textual or graphical user interface
-- back-end of a system - process information in response to front-end system requests and operations
+system requests and operations
 - karma – points equal to the sum of upvotes-downvotes on a user’s own content-
 
 	5. References
@@ -63,7 +62,7 @@ HNC will be developed as a new stand-alone system.
 
 3. Proposed system
         1. Overview
-The system consists of a database operated by a the back-end. With front-end for the website and an API component.
+The system consists of a website, operating a database and an API component.
 
         2. Functional requirements
 
@@ -127,7 +126,7 @@ Flow of events:
 2. He goes on HNC website. 
 3. Joe is presented with HNC front page, that contains hacker news.
 
-- Scenario name: Share news article
+- Scenario name: Share article
 Participating actor instances: Bob as User
 Flow of events:
 1. Bob wants to leave a comment on a hacker news article. 
@@ -228,7 +227,7 @@ Entry conditions: Guest is on HNC front page
 Exit conditions: Guest has been registered on the system.
 Quality requirements:
 
-Use case name: Share news
+Use case name: Share article
 Participating actors: User
 Brief description: User creates new post.
 Flow of events:
@@ -303,5 +302,7 @@ Exit conditions: Simulator receives the latest article from database
 Quality requirements:
 
 
-       4. Glossary
+       5. Glossary
+ Add Terms from diagrams 
+
 
