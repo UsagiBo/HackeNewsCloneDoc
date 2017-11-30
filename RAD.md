@@ -47,7 +47,8 @@ Table of content:
 - News, news article content and post refer to website’s content 
 - API - Application programming interface
 system requests and operations
-- karma – points equal to the sum of upvotes-downvotes on a user’s own content-
+- karma – points equal to the sum of upvotes-downvotes on a user’s own content
+- website’s URL – the address of HNC website, from where it will be accessible from
 
 	5. References
 [1] Hacker News website: https://news.ycombinator.com/
@@ -97,7 +98,6 @@ The system consists of a website, operating a database and an API component.
 - The system shouldn’t 'loose' any content, sent to it from the simulator program. 
 
           3. Performance 
--The system 
 
           4. Supportability 
 
@@ -213,7 +213,6 @@ Flow of events:
        HNC: returns front page, that contains a list of posts.
 Entry conditions:
 Exit conditions: Guest views hacker news.
-Quality requirements:
 
 Use case name: Sign up
 Participating actors: Guest
@@ -225,7 +224,6 @@ Flow of events:
 	HNC: Registers a new user profile for Guest in the database and returns home page.
 Entry conditions: Guest is on HNC front page 
 Exit conditions: Guest has been registered on the system.
-Quality requirements:
 
 Use case name: Share article
 Participating actors: User
@@ -237,7 +235,6 @@ Flow of events:
 	HNC: returns “Post” page, containing the post. The post is saved in HNC database.
 Entry conditions User is logged in. User is on HNC front page.
 Exit conditions: HNC has saved user’s post to the database
-Quality requirements:
 
 Use case name: Vote on an article
 Participating actors: User
@@ -246,7 +243,6 @@ Flow of events:
 	User: clicks either “up” or “down” buttons to vote up or down for an article. 
 Entry conditions User is logged in. User is viewing “Post” page.
 Exit conditions: The up or down votes for that post change.
-Quality requirements:
 
 Use case name: Comment on an article
 Participating actors: User
@@ -256,7 +252,6 @@ Flow of events:
 	HNC:  updates “Post” page with user’s comment and saves the comment to the HNC database.
 Entry conditions User is logged in. User is viewing “Post” page.
 Exit conditions: User’s comment is present in HNC database.
-Quality requirements:
 
 Use case name: Sign in
 Participating actors: User
@@ -268,7 +263,6 @@ Flow of events:
        HNC: returns front page and saves the current user as logged in.
 Entry conditions: User is not logged in. User is on HNC front page.
 Exit conditions: User is logged in.
-Quality requirements:
 
 Use case name: View system status
 Participating actors: Simulator
@@ -278,7 +272,6 @@ Flow of events:
 	HNC: returns the website’s status: Alive, Update, or Down.
 Entry conditions: 
 Exit conditions: Simulator is aware of the HNC current state.
-Quality requirements:
 
 Use case name: Post article
 Participating actors: Simulator
@@ -289,7 +282,6 @@ Flow of events:
 The website saves the article.
 Entry conditions: Simulator knows JSON format of post class.
 Exit conditions: System has saved the post in HNC database
-Quality requirements:
 
 Use case name: View latest article
 Participating actors: Simulator
@@ -299,7 +291,6 @@ Flow of events:
 	HNC: returns latest article from database. 
 Entry conditions: 
 Exit conditions: Simulator receives the latest article from database
-Quality requirements:
 
 
        5. Glossary
